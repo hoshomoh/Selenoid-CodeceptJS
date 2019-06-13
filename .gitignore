@@ -7,4 +7,3 @@ node_modules
 # other
 opt
 config/browsers.json
-/package-lock.json
