@@ -1,0 +1,8 @@
+# editor
+/.idea
+
+# packages and generated stuff
+node_modules
+
+# other
+output

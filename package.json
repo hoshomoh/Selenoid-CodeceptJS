@@ -1,0 +1,19 @@
+{
+  "name": "selenoid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "@hoshomoh/selenoid": "bin/selenoid",
+    "selenoid": "bin/selenoid"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "shelljs": "^0.8.3"
+  }
+}

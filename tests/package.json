@@ -1,0 +1,15 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-webdriver": "./node_modules/.bin/codeceptjs run -c codecept.webdriver.conf.js --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^2.1.4",
+    "webdriverio": "^5.10.4"
+  }
+}
