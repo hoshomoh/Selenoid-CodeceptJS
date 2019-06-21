@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-webdriver": "./node_modules/.bin/codeceptjs run -c codecept.webdriver.conf.js --steps"
+    "test": "./node_modules/.bin/codeceptjs run --steps"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "appium": "^1.13.0",
     "codeceptjs": "^2.1.4",
     "webdriverio": "^5.10.4"
   }

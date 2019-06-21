@@ -7,10 +7,17 @@ download-browsers:
 
 start-selenoid: download-browsers
 	@$(COMPOSE) up -d selenoid selenoid-ui
+    #
+    # Selenoid and Selenoid UI should be up and running
+    #    Selenoid:    https://localhost:4445
+    #    Selenoid UI: https://localhost:8888
+    #
+    #    To check Selenoid status https://localhost:4445/status
 
-test-webdriver: start-selenoid
+test: start-selenoid
 	# Run end to end tests via codeceptjs
-	@$(COMPOSE) run --service-ports web /bin/sh -c 'npm run test-webdriver'
+	@$(COMPOSE) up web
+	@$(COMPOSE) run --service-ports web /bin/sh -c 'npm test'
 
 shell:
 	# Start an interactive shell session
