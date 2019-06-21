@@ -5,7 +5,7 @@ RM := rm
 download-browsers:
 	@$(COMPOSE) up selenoid-cm
 
-start-selenoid: download-browsers
+start: download-browsers
 	@$(COMPOSE) up -d selenoid selenoid-ui
     #
     # Selenoid and Selenoid UI should be up and running
@@ -23,6 +23,6 @@ shell:
 	# Start an interactive shell session
 	@$(COMPOSE) run --rm --service-ports web bash
 
-stop-selenoid:
+stop:
 	@$(RM) -rf config/browsers.json
 	@$(COMPOSE) stop selenoid selenoid-ui

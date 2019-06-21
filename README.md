@@ -14,7 +14,7 @@ make download-browsers
 
 #### Start Selenoid and Selenoid UI
 ```bash
-make start-selenoid
+make start
 ```
 
 ```
@@ -24,6 +24,11 @@ Selenoid:    https://localhost:4445
 Selenoid UI: https://localhost:8888
 
 To check Selenoid status https://localhost:4445/status
+```
+
+#### Stop Selenoid and Selenoid UI
+```bash
+make stop
 ```
 
 #### Run the sample Codecept Test
