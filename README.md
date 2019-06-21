@@ -30,3 +30,9 @@ To check Selenoid status https://localhost:4445/status
 
 I have added a sample codecept test(check /tests folder) that runs in a docker container. To run the test 
 `make test` and if you would like to SSH into the sample test container `make shell`
+
+### To do
+
+- Support for android testing using Appium 
+- Support for specifying slenoid and selenoid UI port
+- Support for downloading specified browsers instead of pulling the last two versions of chrome, firefox and opera
