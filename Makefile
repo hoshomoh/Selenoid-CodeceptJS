@@ -14,7 +14,7 @@ start: download-browsers
     #
     #    To check Selenoid status https://localhost:4445/status
 
-test: start-selenoid
+test: start
 	# Run end to end tests via codeceptjs
 	@$(COMPOSE) up web
 	@$(COMPOSE) run --service-ports web /bin/sh -c 'npm test'
